@@ -1,5 +1,7 @@
 function sum(a, b) {
-  /* ваш код */
-}
-
-module.exports = sum;
+    
+    if(typeof a === "number" && typeof b === "number") return a + b;
+    else throw new TypeError("Один из аргументов не число");;
+  }
+  
+  module.exports = sum;
